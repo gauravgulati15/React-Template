@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    background-color: #B5EAEA;
+    border-bottom: 2px solid #476a2e;
+    font-family: 'Tiro Gurmukhi', serif;
+    box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+.logo{
+    font-size: 32px;
+    padding-left: 10px;
+}
+
+.nav-links{
+    /* width: 75%; */
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-end; */
+    list-style: none;
+}
+
+.home,
+.about{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.home:hover,
+.about:hover{
+    transform: scale(1.1);
+    transition: all 0.9s;
+    color: black;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+    .logo{
+        display: flex;
+        /* justify-content: center; */
+        position: absolute;
+        /* width: 100%; */
+        text-align: center;
+        top: 15px;
+        left: 35px;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .nav-links-mobile{
+        position: absolute;
+        display: block;
+        list-style: none;
+        background-color: #B5EAEA;
+        left: 0;
+        top: 75px;
+        transition: all 0.9s ease-out;
+        width: 100%;
+    }
+
+    .home,
+    .about{
+        text-align: center;
+        padding: 32px;
+        width: 100%;
+        transition: all 0.5s ease;
+    }
+
+    .home:hover,
+    .about:hover{
+        transform: scale(1.1);
+        transition: all 0.9s;
+        color: black;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+        position: absolute;
+        font-size: 32px;
+        border: none;
+        outline: none;
+        top: 15px;
+        right: 25px;
+    }
+}
+    
