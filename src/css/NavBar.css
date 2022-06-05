@@ -8,24 +8,26 @@
 
 .navbar{
     display: flex;
+    justify-content: space-around;
     align-items: center;
     height: 5rem;
-    background-color: #B5EAEA;
-    border-bottom: 2px solid #476a2e;
+    background-color: #F2D1D1;
+    /* border-bottom: 2px solid #476a2e; */
     font-family: 'Tiro Gurmukhi', serif;
-    box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5); */
 }
 
 .logo{
-    font-size: 32px;
+    font-size: 30px;
+    /* flex-wrap: nowrap; */
     padding-left: 10px;
 }
 
 .nav-links{
-    /* width: 75%; */
+    width: 75%;
     display: flex;
     align-items: center;
-    /* justify-content: flex-end; */
+    justify-content: flex-end;
     list-style: none;
 }
 
@@ -50,12 +52,12 @@
     display: none;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
     .logo{
         display: flex;
-        /* justify-content: center; */
+        justify-content: center;
         position: absolute;
-        /* width: 100%; */
+        width: 100%;
         text-align: center;
         top: 15px;
         left: 35px;
@@ -69,7 +71,7 @@
         position: absolute;
         display: block;
         list-style: none;
-        background-color: #B5EAEA;
+        background-color: #F2D1D1;
         left: 0;
         top: 75px;
         transition: all 0.9s ease-out;

@@ -1,0 +1,14 @@
+.error-page {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.error-container {
+    margin: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+h1{
+    margin-bottom: 2rem;
+}

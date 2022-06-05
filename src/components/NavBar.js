@@ -11,23 +11,23 @@ const NavBar = () => {
     const toggleHamburger = () => {
         setHamburgerOpen(!hamburgerOpen);
     };
-    
+
     return (
         <nav className="navbar">
             <h3 className="logo">Gaurav Gulati</h3>
             <ul className={hamburgerOpen ? "nav-links-mobile" : "nav-links"}>
-                <Link to="/" className="home" onClick={toggleHamburger}>
+                <Link to="/" className="home" onClick={hamburgerOpen ? toggleHamburger: {}}>
                     <li>Home</li>
                 </Link>
-                <Link to="/about" className="about" onClick={toggleHamburger}>
+                <Link to="/about" className="about" onClick={hamburgerOpen ? toggleHamburger: {}}>
                     <li>About</li>
                 </Link>
             </ul>
             <button className="mobile-menu-icon" onClick={toggleHamburger}>
                 {!hamburgerOpen ? (
-                    <MenuOutlined style={{ fontSize: '26px', padding: '1rem', backgroundColor: '#B5EAEA'}}/>
+                    <MenuOutlined style={{ fontSize: '26px', padding: '1rem', backgroundColor: '#F2D1D1'}}/>
                 ) : (
-                    <CloseOutlined style={{ fontSize: '26px', padding: '1rem', backgroundColor: '#B5EAEA'}}/>
+                    <CloseOutlined style={{ fontSize: '26px', padding: '1rem', backgroundColor: '#F2D1D1'}}/>
                 )}
             </button>
         </nav>
