@@ -2,14 +2,14 @@ import React, {useState, useRef, useEffect} from "react";
 import "../css/SearchForm.css";
 
 
-const SearchForm = () => {
+const SearchForm = ({ updateValue }) => {
 
     const searchTerm = useRef("");
     // const [searchTerm, setSearchTerm] = useState("");
 
     const changeSearchTerm = (e) => {
         // setSearchTerm(e.target.value);
-        console.log(searchTerm.current.value);
+        updateValue(e.target.value);
     };
 
     useEffect(() => {
@@ -18,9 +18,9 @@ const SearchForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("Searching...");
-        console.log(searchTerm.current.value);
-        searchTerm.current.value = "";
+        // console.log("Searching...");
+        // updateValue(e.target.value);
+        // searchTerm.current.value = "";
     };
 
     return (
