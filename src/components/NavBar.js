@@ -14,7 +14,7 @@ const NavBar = () => {
 
     return (
         <nav className="navbar">
-            <h3 className="logo">Gaurav Gulati</h3>
+            <h3 className="logo">Logo</h3>
             <ul className={hamburgerOpen ? "nav-links-mobile" : "nav-links"}>
                 <Link to="/" className="home" onClick={hamburgerOpen ? toggleHamburger: {}}>
                     <li>Home</li>
