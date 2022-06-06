@@ -1,9 +1,11 @@
 import React from "react";
+import SearchForm from "../components/SearchForm";
 
 const Home = () => {
   return (
     <div>
-      <h1>Home</h1>
+        {/* <h1>Home</h1> */}
+      <SearchForm />
     </div>
   );
 };

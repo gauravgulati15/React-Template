@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    flex: wrap;
 }
 
 .navbar{
@@ -103,4 +104,10 @@
         right: 25px;
     }
 }
-    
+ 
+@media screen and (max-width: 450px){
+    .logo{
+        justify-content: flex-start;
+        right: auto;
+    }
+}
